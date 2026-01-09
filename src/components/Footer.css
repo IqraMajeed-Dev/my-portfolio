@@ -1,0 +1,28 @@
+.footer {
+  background: #0c0529;
+  color: #dcdcdc;
+  text-align: center;
+  padding: 24px 6%;
+  border-top: 1px solid rgba(167, 116, 255, 0.15);
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+.footer span {
+  color: #a774ff;
+  font-weight: 600;
+}
+
+/* Hover effect on name for subtle interaction */
+.footer span:hover {
+  color: #caaaff;
+  transition: color 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .footer {
+    padding: 18px 5%;
+    font-size: 0.85rem;
+  }
+}

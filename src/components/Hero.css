@@ -1,0 +1,122 @@
+.hero {
+  background: #0c0529;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 6%;
+}
+
+/* Centered content */
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #a774ff;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1rem;
+  color: #dcdcdc;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.highlight {
+  color: #a774ff;
+}
+
+/* Button */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-connect {
+  background: #a774ff;
+  color: #fff;
+}
+
+.btn-connect:hover {
+  background: #b993ff;
+}
+
+/* Social Icons */
+.hero-socials {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 1.7rem;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #a774ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.3rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+
+  .social-icon {
+    font-size: 1.5rem;
+  }
+}
+.hero {
+  background: #0c0529;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 6% 0; /* removed bottom padding */
+  margin: 0;
+  border: 0;
+}

@@ -1,0 +1,154 @@
+.about {
+  
+  background: #0c0529;
+  color: #fff;
+  padding: 40px 6% 80px; /* Reduced top padding to remove extra space */
+  text-align: center;
+  margin-top: 0;
+}
+
+/* About Title */
+.about-title h1 {
+  font-size: 2.3rem;
+  color: #a774ff;
+  margin: 0 0 18px 0; /* Removed top margin */
+}
+
+/* About Paragraph */
+.about-para p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #dcdcdc;
+  margin: 10px auto;
+  max-width: 1000px;
+}
+
+/* ================= Skills Section ================= */
+.skills-section {
+  margin-top: 36px;
+}
+
+.skills-section h2 {
+  font-size: 1.6rem;
+  color: #a774ff;
+  margin-bottom: 22px;
+  margin-top: 0;
+}
+
+/* Grid: small icon boxes centered */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: start;
+}
+
+/* Single skill item */
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.skill-item:hover {
+  transform: translateY(-6px);
+}
+
+/* Icon box */
+.skill-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  background: rgba(167, 116, 255, 0.1);
+  border: 1px solid rgba(167, 116, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a774ff;
+  font-size: 1.5rem;
+  transition: all 0.3s;
+}
+
+.skill-item:hover .skill-box {
+  background: #a774ff;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(167, 116, 255, 0.5);
+}
+
+/* Skill name below icon */
+.skill-name {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #fff;
+  text-align: center;
+  width: 100px;
+  overflow-wrap: anywhere;
+  transition: color 0.3s;
+}
+
+.skill-item:hover .skill-name {
+  color: #a774ff;
+}
+
+/* ================= Responsive Adjustments ================= */
+@media (max-width: 900px) {
+  .about {
+    padding: 30px 5% 60px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 16px;
+  }
+
+  .skill-box {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+
+  .skill-name {
+    width: 90px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 20px 5% 40px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 12px;
+  }
+
+  .skill-box {
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
+  }
+
+  .skill-name {
+    width: 70px;
+    font-size: 0.72rem;
+  }
+}
+
+/* Optional: Remove extra margin/padding for body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.about {
+  background: #0c0529;
+  color: #fff;
+  padding: 0 6% 80px; /* removed top padding completely */
+  text-align: center;
+  margin-top: 0;
+  border-top: none;
+}

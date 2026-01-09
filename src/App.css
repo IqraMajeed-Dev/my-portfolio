@@ -1,0 +1,121 @@
+/* ========================
+   RESET & BASE STYLES
+======================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* ========================
+   ROOT FULL SCREEN
+======================== */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ========================
+   APP CONTAINER
+======================== */
+.app {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* ========================
+   LOGO
+======================== */
+.logo {
+  height: 6rem;
+  max-width: 100%;
+  padding: 1.5rem;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* ========================
+   ANIMATION
+======================== */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* ========================
+   CARD
+======================== */
+.card {
+  max-width: 600px;
+  width: 100%;
+  padding: 2rem;
+  margin: 1rem auto;
+}
+
+/* ========================
+   TEXT
+======================== */
+.read-the-docs {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* ========================
+   MOBILE RESPONSIVE
+======================== */
+@media (max-width: 768px) {
+  .app {
+    padding: 1.2rem;
+  }
+
+  .logo {
+    height: 4.5rem;
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+}
+
+/* ========================
+   SMALL MOBILE
+======================== */
+@media (max-width: 480px) {
+  .logo {
+    height: 3.5rem;
+  }
+
+  .read-the-docs {
+    font-size: 0.8rem;
+  }
+}

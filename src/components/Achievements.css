@@ -1,0 +1,117 @@
+.achievements {
+  background: #0c0529;
+  color: #fff;
+  padding: 80px 6%;
+  text-align: center;
+}
+
+.achievements-title {
+  font-size: 2.2rem;
+  color: #a774ff;
+  margin-bottom: 35px;
+}
+
+/* Top stats (Projects, Certificates, APIs) */
+.about-achievements {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.about-achievement {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  padding: 18px 28px;
+  text-align: center;
+  border: 1px solid rgba(167, 116, 255, 0.14);
+  min-width: 160px;
+  transition: transform 0.3s ease;
+}
+
+.about-achievement:hover {
+  transform: translateY(-4px);
+}
+
+.about-achievement h1 {
+  color: #a774ff;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.about-achievement p {
+  color: #d6ccff;
+  font-size: 0.85rem;
+  margin-top: 6px;
+}
+
+/* Certificate Cards */
+.certificates-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.certificate-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(167, 116, 255, 0.15);
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.certificate-card:hover {
+  transform: translateY(-6px);
+}
+
+.certificate-card h3 {
+  color: #ffffff;
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+}
+
+/* View Button */
+.view-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #a774ff;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.view-btn:hover {
+  background: #8d5df0;
+}
+
+.view-btn .icon {
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .achievements {
+    padding: 50px 5%;
+  }
+
+  .achievements-title {
+    font-size: 1.7rem;
+  }
+
+  .about-achievements {
+    gap: 18px;
+  }
+
+  .certificate-card {
+    padding: 16px;
+  }
+}
